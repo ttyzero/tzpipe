@@ -62,3 +62,14 @@ send them on to the 'catsonly' channel:
 tzpipe listen animals --filter='^cats' --log | tzpipe send catsonly
 ```
 
+<br/><br/>
+<table>
+<tr><td>
+<img src='https://raw.githubusercontent.com/ttyzero/logo/master/assets/ttyzero_animated.png' alt='ttyZero Logo' title='ttyZero Logo'/>
+</td>
+<td style='padding-left: 10em'>
+<h2>tzpipe is part of the <a href='http://github.com/ttyzero'>ttyZero Project</a></h2>
+<b>tzpipe</b> is <i>(c) 2018 ttyZero authors</i> <br/>
+ and is available under the <b>MIT license</b>. 
+</td></tr>
+</table>
