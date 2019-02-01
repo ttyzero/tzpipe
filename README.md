@@ -12,7 +12,7 @@ _tzpipe_ _[send|listen]_ _channel_ arg1 arg2..
 ### Listening:
 
 tzpipe always needs a verb (send | listen)  and a minibus channel name to operate on, 
-with no other parameters this listens on the selected channel and outputs to stdout. 
+with no other parameters this listens on the selected channel and outputs to `STDOUT`. 
 
 Here we connect to a ficticious channel that is being sent random animals:
 ```sh
@@ -49,14 +49,14 @@ ways to do this:
 > tzpipe send foo 'This is a message'
 ```
 
-tzpipe accepts _STDIN_ and will send each line to the channel, you can use
+tzpipe accepts `STDIN` and will send each line to the channel, you can use
 --limit here as well to stop capturing after a number of lines:
 ```sh
 cat /dev/poetry | tzpipe send foo --limit=100
 ```
 
 You can use tzpipe to reduce incomming messages and deliver them to a different
-channel, here we filter cats from the animals channel, log matches to sterr and 
+channel, here we filter cats from the animals channel, log matches to `STDERR` and 
 send them on to the 'catsonly' channel:
 ```sh
 tzpipe listen animals --filter='^cats' --log | tzpipe send catsonly
